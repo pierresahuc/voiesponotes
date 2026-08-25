@@ -3,12 +3,6 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {
-        "name": "Boulebard de Cluny",
-        "type": "aucun",
-        "line": 1,
-        "status": "unknown"
-      },
       "geometry": {
         "type": "LineString",
         "coordinates": [
