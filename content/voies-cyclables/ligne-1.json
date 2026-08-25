@@ -4,10 +4,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Boulebard de Cluny",
-        "type": "aucun",
         "line": 1,
-        "status": "unknown"
+        "name": "Vaulx-en-Velin Ouest",
+        "status": "wip",
+        "type": "bidirectionnelle"
       },
       "geometry": {
         "type": "LineString",
