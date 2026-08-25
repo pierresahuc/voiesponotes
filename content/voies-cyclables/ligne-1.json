@@ -1,14 +1,14 @@
 {
   "type": "FeatureCollection",
-       "properties": {
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Boulebard de Cluny",
         "type": "aucun",
         "line": 1,
         "status": "unknown"
       },
-  "features": [
-    {
-      "type": "Feature",
       "geometry": {
         "type": "LineString",
         "coordinates": [
