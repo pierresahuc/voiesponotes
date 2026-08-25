@@ -1,5 +1,11 @@
 {
   "type": "FeatureCollection",
+       "properties": {
+        "name": "Boulebard de Cluny",
+        "type": "aucun",
+        "line": 1,
+        "status": "unknown"
+      },
   "features": [
     {
       "type": "Feature",
@@ -19,12 +25,6 @@
             45.049432
           ]
         ]
-      },
-      "properties": {
-        "name": "Boulebard de Cluny",
-        "type": "aucun",
-        "line": 1,
-        "status": "unknown"
       }
     }
   ]
