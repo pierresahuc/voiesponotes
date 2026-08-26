@@ -28,6 +28,670 @@
         "link": "/voie-ponote-1",
         "quality": "unsatisfactory"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.890121,
+            45.049438
+          ],
+          [
+            3.889576,
+            45.0495
+          ],
+          [
+            3.888846,
+            45.049546
+          ],
+          [
+            3.888206,
+            45.049618
+          ],
+          [
+            3.887929,
+            45.049676
+          ],
+          [
+            3.8878,
+            45.049757
+          ],
+          [
+            3.887561,
+            45.049729
+          ],
+          [
+            3.887226,
+            45.049737
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Bonneville",
+        "type": "aucun",
+        "line": 1,
+        "status": "planned",
+        "link": "/voie-ponote-1",
+        "quality": "unsatisfactory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.887218,
+            45.049745
+          ],
+          [
+            3.887046,
+            45.049764
+          ],
+          [
+            3.88683,
+            45.049842
+          ],
+          [
+            3.886405,
+            45.049994
+          ],
+          [
+            3.886073,
+            45.05012
+          ],
+          [
+            3.885663,
+            45.050278
+          ],
+          [
+            3.885465,
+            45.050358
+          ],
+          [
+            3.885296,
+            45.050416
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Bonneville",
+        "type": "bandes-cyclables",
+        "line": 1,
+        "status": "planned",
+        "link": "/voie-ponote-1",
+        "quality": "unsatisfactory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.885271,
+            45.050423
+          ],
+          [
+            3.884959,
+            45.05053
+          ],
+          [
+            3.884522,
+            45.050676
+          ],
+          [
+            3.884269,
+            45.050752
+          ],
+          [
+            3.884129,
+            45.050797
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Bonneville",
+        "type": "aucun",
+        "line": 1,
+        "status": "planned",
+        "link": "/voie-ponote-1",
+        "quality": "unsatisfactory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.884115,
+            45.050806
+          ],
+          [
+            3.883798,
+            45.050839
+          ],
+          [
+            3.883367,
+            45.050843
+          ],
+          [
+            3.883029,
+            45.050852
+          ],
+          [
+            3.882822,
+            45.050815
+          ],
+          [
+            3.882659,
+            45.0508
+          ],
+          [
+            3.882409,
+            45.0508
+          ],
+          [
+            3.882228,
+            45.050808
+          ],
+          [
+            3.882065,
+            45.050788
+          ],
+          [
+            3.881871,
+            45.050681
+          ],
+          [
+            3.881641,
+            45.050537
+          ],
+          [
+            3.881528,
+            45.050378
+          ],
+          [
+            3.881452,
+            45.050222
+          ],
+          [
+            3.881402,
+            45.050063
+          ],
+          [
+            3.881402,
+            45.049917
+          ],
+          [
+            3.881414,
+            45.049691
+          ],
+          [
+            3.881408,
+            45.049421
+          ],
+          [
+            3.881376,
+            45.049285
+          ],
+          [
+            3.881282,
+            45.049024
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Avenue de Bonneville",
+        "type": "bilaterale",
+        "line": 1,
+        "status": "planned",
+        "link": "/voie-ponote-1",
+        "quality": "unsatisfactory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.881269,
+            45.049024
+          ],
+          [
+            3.88124,
+            45.048828
+          ],
+          [
+            3.881164,
+            45.048639
+          ],
+          [
+            3.881062,
+            45.048384
+          ],
+          [
+            3.880969,
+            45.048176
+          ],
+          [
+            3.880879,
+            45.04797
+          ],
+          [
+            3.880771,
+            45.04774
+          ],
+          [
+            3.880672,
+            45.047569
+          ],
+          [
+            3.880622,
+            45.047495
+          ],
+          [
+            3.880575,
+            45.04745
+          ],
+          [
+            3.880412,
+            45.047415
+          ],
+          [
+            3.880092,
+            45.047364
+          ],
+          [
+            3.879833,
+            45.04732
+          ],
+          [
+            3.879669,
+            45.047236
+          ],
+          [
+            3.87948,
+            45.047148
+          ],
+          [
+            3.879369,
+            45.047078
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Avenue d'Aiguilhe",
+        "type": "aucun",
+        "line": 1,
+        "status": "planned",
+        "quality": "unsatisfactory",
+        "link": "/voie-ponote-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.879346,
+            45.047074
+          ],
+          [
+            3.879291,
+            45.04698
+          ],
+          [
+            3.879451,
+            45.046752
+          ],
+          [
+            3.879557,
+            45.046466
+          ],
+          [
+            3.879668,
+            45.046129
+          ],
+          [
+            3.879801,
+            45.045741
+          ],
+          [
+            3.879929,
+            45.045321
+          ],
+          [
+            3.880042,
+            45.044854
+          ],
+          [
+            3.880036,
+            45.044572
+          ],
+          [
+            3.879959,
+            45.044332
+          ],
+          [
+            3.879875,
+            45.044148
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Carnot",
+        "type": "aucun",
+        "line": 1,
+        "status": "planned",
+        "link": "/voie-ponote-1",
+        "quality": "unsatisfactory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.879861,
+            45.044139
+          ],
+          [
+            3.880078,
+            45.043735
+          ],
+          [
+            3.880333,
+            45.043273
+          ],
+          [
+            3.88045,
+            45.042904
+          ],
+          [
+            3.880633,
+            45.042704
+          ],
+          [
+            3.880916,
+            45.042477
+          ],
+          [
+            3.881293,
+            45.042265
+          ],
+          [
+            3.881676,
+            45.042151
+          ],
+          [
+            3.882281,
+            45.042073
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Saint Louis",
+        "type": "aucun",
+        "line": 1,
+        "status": "planned",
+        "quality": "unsatisfactory",
+        "link": "/voie-ponote-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.882276,
+            45.042084
+          ],
+          [
+            3.882698,
+            45.042033
+          ],
+          [
+            3.883519,
+            45.042022
+          ],
+          [
+            3.884257,
+            45.042002
+          ],
+          [
+            3.884912,
+            45.041963
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Breuil",
+        "type": "aucun",
+        "line": 1,
+        "status": "planned",
+        "link": "/voie-ponote-1",
+        "quality": "unsatisfactory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.884901,
+            45.041982
+          ],
+          [
+            3.885812,
+            45.042029
+          ],
+          [
+            3.885923,
+            45.042069
+          ],
+          [
+            3.886794,
+            45.042124
+          ],
+          [
+            3.887049,
+            45.042057
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Boulevard du Maréchal Fayolle",
+        "type": "voie-bus",
+        "line": 1,
+        "status": "done",
+        "link": "/voie-ponote-1",
+        "quality": "unsatisfactory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.887055,
+            45.042051
+          ],
+          [
+            3.887183,
+            45.041887
+          ],
+          [
+            3.887371,
+            45.041653
+          ],
+          [
+            3.887566,
+            45.041459
+          ],
+          [
+            3.887752,
+            45.041353
+          ],
+          [
+            3.887985,
+            45.041285
+          ],
+          [
+            3.888093,
+            45.041265
+          ],
+          [
+            3.888246,
+            45.041304
+          ],
+          [
+            3.888365,
+            45.041416
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Avenue Georges Clémenceau",
+        "type": "aucun",
+        "line": 1,
+        "status": "planned",
+        "quality": "unsatisfactory",
+        "link": "/voie-ponote-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.888365,
+            45.041432
+          ],
+          [
+            3.888498,
+            45.041669
+          ],
+          [
+            3.888693,
+            45.042014
+          ],
+          [
+            3.889078,
+            45.042638
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Avenue de la Dentelle",
+        "type": "aucun",
+        "line": 1,
+        "status": "planned",
+        "link": "/voie-ponote-1",
+        "quality": "unsatisfactory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.889081,
+            45.04265
+          ],
+          [
+            3.889836,
+            45.04355
+          ],
+          [
+            3.890468,
+            45.044382
+          ],
+          [
+            3.890776,
+            45.044795
+          ],
+          [
+            3.891762,
+            45.046205
+          ],
+          [
+            3.891914,
+            45.046415
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de la République",
+        "type": "aucun",
+        "line": 1,
+        "status": "planned",
+        "link": "/voie-ponote-1",
+        "quality": "unsatisfactory"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.891912,
+            45.046427
+          ],
+          [
+            3.893482,
+            45.048058
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Boulevard Maréchal Joffre",
+        "type": "aucun",
+        "line": 1,
+        "status": "planned",
+        "quality": "unsatisfactory",
+        "link": "/voie-ponote-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.893476,
+            45.048072
+          ],
+          [
+            3.892396,
+            45.04857
+          ],
+          [
+            3.891375,
+            45.049035
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Boulevard de Cluny",
+        "type": "aucun",
+        "line": 1,
+        "status": "planned",
+        "link": "/voie-ponote-1",
+        "quality": "unsatisfactory"
+      }
     }
   ]
 }
