@@ -1,21 +1,31 @@
 {
   "type": "FeatureCollection",
-  "features": [
+  "features": [  
     {
       "type": "Feature",
       "properties": {
         "line": 1,
-        "name": "Vaulx-en-Velin Ouest",
+        "name": "Bd de Cluny",
         "status": "wip",
         "type": "bidirectionnelle",
-        "link": "/lapuycyclette/"
+        "link": "/voie-lyonnaise-1#vaulx-en-velin-gabriel-péri-à-la-doua-croix-luizet",
+        "quality": "satisfactory"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [3.891358,45.049043],
-          [3.890658,45.049308],
-          [3.890134,45.049432]
+        [
+            3.891358,
+            45.049043
+          ],
+          [
+            3.890658,
+            45.049308
+          ],
+          [
+            3.890134,
+            45.049432
+          ]
         ]
       }
     }
