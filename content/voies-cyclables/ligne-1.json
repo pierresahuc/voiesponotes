@@ -6,10 +6,10 @@
       "properties": {
         "line": 1,
         "name": "Bd de Cluny",
-        "status": "wip",
-        "type": "bidirectionnelle",
-        "link": "/voie-lyonnaise-1#vaulx-en-velin-gabriel-péri-à-la-doua-croix-luizet",
-        "quality": "satisfactory"
+        "status": "unknown",
+        "type": "aucun",
+        "link": "/voie-ponote-1/",
+        "quality": "unsatisfactory"
       },
       "geometry": {
         "type": "LineString",
@@ -28,6 +28,54 @@
           ]
         ]
       }
-    }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "line": 1,
+        "name": "Avenue de Bonneville",
+        "status": "unknown",
+        "type": "aucun",
+        "link": "/voie-ponote-1/",
+        "quality": "unsatisfactory"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            3.890121,
+            45.049438
+          ],
+          [
+            3.889576,
+            45.0495
+          ],
+          [
+            3.888846,
+            45.049546
+          ],
+          [
+            3.888206,
+            45.049618
+          ],
+          [
+            3.887929,
+            45.049676
+          ],
+          [
+            3.8878,
+            45.049757
+          ],
+          [
+            3.887561,
+            45.049729
+          ],
+          [
+            3.887226,
+            45.049737
+          ]
+        ]
+      }
+  }
   ]
 }
