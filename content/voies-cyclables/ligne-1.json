@@ -1,13 +1,13 @@
 {
   "type": "FeatureCollection",
   "features": [
-        {
+    {
       "type": "Feature",
       "properties": {
         "type": "danger",
         "name": "Insertion devant le gymnase Quincieux",
         "description": "Manoeuvre dangereuse pour les cyclistes : mauvaise visibilité, signalisation peu claire",
-        "danger": "Risque d'accident"
+        "danger": "Risque d accident"
       },
       "geometry": {
         "type": "Point",
