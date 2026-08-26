@@ -7,8 +7,8 @@
         "line": 1,
         "name": "Bd de Cluny",
         "status": "wip",
-        "type": "bidirectionnelle",
-        "link": "/voie-lyonnaise-1#vaulx-en-velin-gabriel-péri-à-la-doua-croix-luizet",
+        "type": "aucun",
+        "link": "/voie-ponote-1",
         "quality": "satisfactory"
       },
       "geometry": {
