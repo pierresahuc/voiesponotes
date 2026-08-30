@@ -98,11 +98,18 @@ export type DangerFeature = {
     name: string;
     description: string;
     danger: string;
+    severity?: 'low' | 'medium' | 'high';
+    tags?: string[];
   };
   geometry: {
     type: 'Point';
     coordinates: [number, number];
   };
+};
+
+export type DangerFeatureCollection = {
+  type: 'FeatureCollection';
+  features: DangerFeature[];
 };
 
 export type Count = { month: string; count: number };
@@ -179,6 +186,7 @@ export interface FiltersState {
   maxDate: Ref<number>;
   dateSteps: Ref<number[]>;
   showCounters: Ref<boolean>;
+  showDangers: Ref<boolean>;
 }
 
 export interface FilterActions {
@@ -188,10 +196,17 @@ export interface FilterActions {
   toggleLineFilter: (index: number) => void;
   setDateRange: (newDateRange: [number, number]) => void;
   toggleShowCounters: () => void;
+  toggleShowDangers: () => void;
 }
 
 export interface UseBikeLaneFiltersOptions {
   allFeatures: Ref<Collections['voiesCyclablesGeojson']['features'] | CompteurFeature[]>;
   allGeojsons?: Ref<Collections['voiesCyclablesGeojson'][] | undefined | null>;
   allLines?: Ref<LineStringFeature[] | undefined | null>;
+}
+
+export function isDangerFeatureCollection(
+    data: any,
+): data is DangerFeatureCollection {
+  return data?.type === 'FeatureCollection' && Array.isArray(data?.features);
 }

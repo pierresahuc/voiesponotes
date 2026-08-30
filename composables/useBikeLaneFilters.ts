@@ -99,6 +99,7 @@ export function useBikeLaneFilters({ allFeatures, allGeojsons, allLines }: UseBi
   const lineFilters = ref<{ label: string; isEnabled: boolean; line: number }[]>([]);
 
   const showCounters = ref(false);
+  const showDangers = ref(false);
 
   const dateRange = ref<[number, number]>([0, 0]);
   const minDate = ref(0);
@@ -262,7 +263,7 @@ export function useBikeLaneFilters({ allFeatures, allGeojsons, allLines }: UseBi
   });
 
   watch(
-    [statusFilters, typeFilters, qualityFilters, lineFilters, dateRange, showCounters],
+    [statusFilters, typeFilters, qualityFilters, lineFilters, dateRange, showCounters, showDangers],
     () => {
       if (!isReady.value) {
         return;
@@ -328,6 +329,12 @@ export function useBikeLaneFilters({ allFeatures, allGeojsons, allLines }: UseBi
         return;
       }
       void router.replace({ query: newQuery });
+
+      if (showDangers.value) {
+        newQuery.dangers = '1';
+      } else {
+        delete newQuery.dangers;
+      }
     },
     { deep: true },
   );
@@ -398,9 +405,13 @@ export function useBikeLaneFilters({ allFeatures, allGeojsons, allLines }: UseBi
     maxDate,
     dateSteps,
     showCounters,
+    showDangers,
   };
 
   const actions: FilterActions = {
+    toggleShowDangers() {
+      showDangers.value = !showDangers.value;
+    },
     toggleStatusFilter(index: number) {
       statusFilters.value[index].isEnabled = !statusFilters.value[index].isEnabled;
     },
