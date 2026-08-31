@@ -11,6 +11,7 @@
         :show-line-filters="showLineFilters"
         :show-date-filter="showDateFilter"
         :show-counters="showCounters"
+        :show-dangers="showDangers"
         :filters="filters"
         :actions="actions"
       />
@@ -49,6 +50,7 @@ const props = defineProps<{
   showLineFilters: boolean;
   showDateFilter?: boolean;
   showCounters?: boolean;
+  showDangers?: boolean; 
   canUseSidePanel?: boolean;
   filterStyle: string;
   filters?: FiltersState;

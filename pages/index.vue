@@ -124,4 +124,23 @@ const { data: counterData } = await useAsyncData(
   { deep: false },
 );
 const counterCount = computed(() => counterData.value?.length ?? 0);
+
+import type { DangerFeature } from '~/types';
+import type { Collections } from '@nuxt/content';
+
+const { data: dangersContent } = await useAsyncData('dangers', () =>
+    queryContent<Collections['dangers']>('dangers').find()
+);
+
+const dangerFeatures = computed(() => {
+  if (!dangersContent.value) return [];
+
+  const features: DangerFeature[] = [];
+  dangersContent.value.forEach((doc) => {
+    if (doc.features) {
+      features.push(...doc.features);
+    }
+  });
+  return features;
+});
 </script>
