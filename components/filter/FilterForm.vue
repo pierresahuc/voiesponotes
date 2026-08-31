@@ -51,6 +51,18 @@
       </label>
     </section>
 
+    <section v-if="options.showDangers">
+      <label class="mt-2 flex items-center gap-3 cursor-pointer">
+        <input
+          type="checkbox"
+          :checked="filters.showDangers.value"
+          class="h-4 w-4 rounded border-gray-300 text-lvv-blue-600 focus:ring-lvv-blue-600"
+          @change="actions.toggleShowDangers"
+        />
+        <span class="text-base font-medium">Afficher les dangers</span>
+      </label>
+    </section>
+
     <div v-if="options.showDateFilter && filters.minDate.value !== filters.maxDate.value" class="mt-2">
       <h3 class="text-base font-medium mb-4">Filtrer par date de réalisation</h3>
       <div>
@@ -82,6 +94,7 @@ const props = defineProps<{
   showLineFilters: boolean;
   showDateFilter?: boolean;
   showCounters?: boolean;
+  showDangers?: boolean; 
   filters: FiltersState;
   actions: FilterActions;
 }>();

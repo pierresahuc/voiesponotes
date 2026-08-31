@@ -328,13 +328,13 @@ export function useBikeLaneFilters({ allFeatures, allGeojsons, allLines }: UseBi
       if (currentPage !== route.name) {
         return;
       }
-      void router.replace({ query: newQuery });
 
       if (showDangers.value) {
         newQuery.dangers = '1';
       } else {
         delete newQuery.dangers;
       }
+      void router.replace({ query: newQuery });
     },
     { deep: true },
   );

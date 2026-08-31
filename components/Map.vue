@@ -9,6 +9,7 @@
         :show-line-filters="options.showLineFilters"
         :show-date-filter="options.showDateFilter"
         :show-counters="options.showCounters"
+        :show-dangers="options.showDangers"
         :can-use-side-panel="options.canUseSidePanel"
         :filters="filters"
         :actions="actions"
@@ -87,6 +88,7 @@ const defaultOptions = {
   showLineFilters: false,
   showDateFilter: false,
   showCounters: false,
+  showDangers: false, 
   canUseSidePanel: false,
   onShrinkControlClick: () => {},
   filterStyle: 'height: calc(100vh - 100px)',
