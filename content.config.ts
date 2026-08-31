@@ -3,6 +3,31 @@ import { z } from 'zod';
 
 export default defineContentConfig({
   collections: {
+    dangers: defineCollection({
+      source: 'dangers/*.json',
+      type: 'page',
+      schema: z.object({
+        type: z.enum(['FeatureCollection']),
+        features: z.array(
+            z.object({
+              type: z.enum(['Feature']),
+              properties: z.object({
+                id: z.string().optional(),
+                type: z.enum(['danger']),
+                name: z.string(),
+                description: z.string(),
+                danger: z.string(),
+                severity: z.enum(['low', 'medium', 'high']).optional(),
+                tags: z.array(z.string()).optional(),
+              }),
+              geometry: z.object({
+                type: z.enum(['Point']),
+                coordinates: z.tuple([z.number(), z.number()]),
+              }),
+            }),
+        ),
+      }),
+    }),
     news: defineCollection({
       source: 'news/*.md',
       type: 'page',
