@@ -2,6 +2,7 @@ import {
   type FiltersState,
   type FilterActions,
   isCompteurFeature,
+  isDangerFeature,
   isLineStringFeature,
   isPointFeature,
   type LaneQuality,
@@ -130,6 +131,10 @@ export function useBikeLaneFilters({ allFeatures, allGeojsons, allLines }: UseBi
 
     if (Object.hasOwn(query, 'counters') || query.modal === 'counter') {
       showCounters.value = query.counters === '1' || query.modal === 'counter';
+    }
+
+    if (Object.hasOwn(query, 'dangers')) {
+      showDangers.value = query.dangers === '1';
     }
 
     if (lineFilters.value.length > 0 && Object.hasOwn(query, 'lines')) {
@@ -298,6 +303,12 @@ export function useBikeLaneFilters({ allFeatures, allGeojsons, allLines }: UseBi
         delete newQuery.counters;
       }
 
+      if (showDangers.value) {
+        newQuery.dangers = '1';
+      } else {
+        delete newQuery.dangers;
+      }
+
       if (lineFilters.value.length > 0) {
         const allLines = lineFilters.value.map((f) => f.line);
         if (visibleLines.value.length < allLines.length) {
@@ -328,12 +339,6 @@ export function useBikeLaneFilters({ allFeatures, allGeojsons, allLines }: UseBi
       if (currentPage !== route.name) {
         return;
       }
-
-      if (showDangers.value) {
-        newQuery.dangers = '1';
-      } else {
-        delete newQuery.dangers;
-      }
       void router.replace({ query: newQuery });
     },
     { deep: true },
@@ -343,6 +348,10 @@ export function useBikeLaneFilters({ allFeatures, allGeojsons, allLines }: UseBi
     return (allFeatures.value ?? []).filter((feature) => {
       if (isCompteurFeature(feature)) {
         return showCounters.value;
+      }
+
+      if (isDangerFeature(feature)) {
+        return showDangers.value;
       }
 
       if (isLineStringFeature(feature) || isPointFeature(feature)) {
@@ -409,9 +418,6 @@ export function useBikeLaneFilters({ allFeatures, allGeojsons, allLines }: UseBi
   };
 
   const actions: FilterActions = {
-    toggleShowDangers() {
-      showDangers.value = !showDangers.value;
-    },
     toggleStatusFilter(index: number) {
       statusFilters.value[index].isEnabled = !statusFilters.value[index].isEnabled;
     },
@@ -429,6 +435,9 @@ export function useBikeLaneFilters({ allFeatures, allGeojsons, allLines }: UseBi
     },
     toggleShowCounters() {
       showCounters.value = !showCounters.value;
+    },
+    toggleShowDangers() {
+      showDangers.value = !showDangers.value;
     },
   };
 
