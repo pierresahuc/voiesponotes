@@ -4,33 +4,16 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "danger-001",
         "type": "danger",
-        "name": "Carrefour T10 - T1",
-        "description": "Espace étroit, peu lisible et très fréquenté avec des commerces",
-        "danger": "Risque de gêne fréquente entre piétons et cyclistes",
+        "name": "Carrefour du pont SNCF - Avenue des Belges",
+        "description": "Aménagement cyclable minimaliste alors que ce carrefour connecte la Via Velay à la piste cyclable qui va à la gare. Problème de synchronisation des feux notamment.",
+        "danger": "Les cyclistes et piétons qui traversent ne sont pas toujours vus correctement par les automobilistes qui viennent du haut de la colline en direction du centre.",
         "severity": "high",
         "tags": ["carrefour", "piétons", "commerces"]
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [4.823830, 45.731556]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "danger-002",
-        "type": "danger",
-        "name": "Passage bas pont",
-        "description": "Passage sous un pont avec hauteur limitée",
-        "danger": "Risque de collision pour cyclistes de grande taille",
-        "severity": "medium",
-        "tags": ["pont", "hauteur-limitée"]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [4.830000, 45.735000]
+        "coordinates": [ 3.8989606, 45.048791]
       }
     }
   ]
