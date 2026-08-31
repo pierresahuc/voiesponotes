@@ -16,6 +16,7 @@
           showDateFilter: true,
           showGeocoder: true,
           showCounters: displayCounters(),
+          showDangers: true,
         }"
         class="h-full flex-1"
         :total-distance="totalDistance"
@@ -30,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import type { CompteurFeature } from '~/types';
+import type { CompteurFeature, DangerFeature } from '~/types';
 import { useBikeLaneFilters } from '~/composables/useBikeLaneFilters';
 import MapPlaceholder from '~/components/MapPlaceholder.vue';
 import { useVoiesCyclablesGeojson, useGetVoiesCyclablesNums } from '~/composables/useVoiesCyclables';
@@ -62,6 +63,12 @@ const { data: voitureCounters } = await useAsyncData(
     if (!displayCounters()) return Promise.resolve(null);
     return queryCollection('compteurs').where('path', 'LIKE', '/compteurs/voiture%').all();
   },
+  { deep: false },
+);
+
+const { data: dangersContent } = await useAsyncData(
+  'map-dangers',
+  () => queryCollection('dangers').all(),
   { deep: false },
 );
 
@@ -109,9 +116,20 @@ const counterFeatures = computed<CompteurFeature[]>(() => {
   return [...veloOnlyFeatures, ...voitureOnlyFeatures, ...mixedFeatures];
 });
 
+const dangerFeatures = computed<DangerFeature[]>(() => {
+  if (!dangersContent.value) return [];
+  const features: DangerFeature[] = [];
+  (dangersContent.value as any[]).forEach((doc) => {
+    if (doc.features && Array.isArray(doc.features)) {
+      features.push(...doc.features);
+    }
+  });
+  return features;
+});
+
 const features = computed(() => {
   const laneFeatures = geojsons.value ? geojsons.value.flatMap((geojson) => geojson.features) : [];
-  return [...laneFeatures, ...counterFeatures.value];
+  return [...laneFeatures, ...counterFeatures.value, ...dangerFeatures.value];
 });
 
 const { filters, actions, filteredFeatures, totalDistance, filteredDistance } = useBikeLaneFilters({
