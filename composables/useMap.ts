@@ -687,11 +687,9 @@ export const useMap = ({ updateUrlOnFeatureClick }: { updateUrlOnFeatureClick?: 
     features: Collections['voiesCyclablesGeojson']['features'];
   }) {
     const dangers = features.filter(isDangerFeature);
-    if (dangers.length === 0) {
-      return;
-    }
+    upsertMapSource(map, 'dangers', dangers);
 
-    if (upsertMapSource(map, 'dangers', dangers)) {
+    if (map.getLayer('dangers')) {
       return;
     }
 
@@ -699,7 +697,7 @@ export const useMap = ({ updateUrlOnFeatureClick }: { updateUrlOnFeatureClick?: 
       id: 'dangers',
       source: 'dangers',
       type: 'symbol',
-      minzoom: 14,
+      minzoom: 11,
       layout: {
         'icon-image': 'danger-icon',
         'icon-size': 0.7,
