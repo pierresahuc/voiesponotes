@@ -98,7 +98,7 @@ const props = defineProps<{
   filters: FiltersState;
   actions: FilterActions;
 }>();
-const defaultOptions = { showLineFilters: false, showDateFilter: false, showCounters: false };
+const defaultOptions = { showLineFilters: false, showDateFilter: false, showCounters: false, showDangerss: false };
 const options = { ...defaultOptions, ...props };
 
 function formatMonthYear(stepIndex: number) {
