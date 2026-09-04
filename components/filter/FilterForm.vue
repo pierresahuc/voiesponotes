@@ -39,18 +39,6 @@
       @deselect-all="filters.lineFilters.value.forEach((line: LineFilterItem) => (line.isEnabled = false))"
     />
 
-    <section v-if="options.showCounters">
-      <label class="mt-2 flex items-center gap-3 cursor-pointer">
-        <input
-          type="checkbox"
-          :checked="filters.showCounters.value"
-          class="h-4 w-4 rounded border-gray-300 text-lvv-blue-600 focus:ring-lvv-blue-600"
-          @change="actions.toggleShowCounters"
-        />
-        <span class="text-base font-medium">Afficher les compteurs</span>
-      </label>
-    </section>
-
     <section v-if="options.showDangers">
       <label class="mt-2 flex items-center gap-3 cursor-pointer">
         <input
